@@ -2,6 +2,7 @@ var http = require('http'); // Import Node.js core module
 
 var server = http.createServer(function (req: any, res: any) {   //create web server
   if (req.url == '/') { //check the URL of the current request
+    console.log('this is url', req.url);
 
     // set response header
     res.writeHead(200, { 'Content-Type': 'text/html' });
