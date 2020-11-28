@@ -9,7 +9,7 @@
     "serve": "nodemon build/index.js",
     "watch": "concurrently \"npm run ts:watch\" \"npm run serve\"",
     "build": "npm run ts:build",
-    "prod:serve": "node dist/index.js",
+    "prod:serve": "node build/index.js",
     "start": "npm run build && npm run prod:serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
